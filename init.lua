@@ -610,6 +610,7 @@ require('lazy').setup({
         'google-java-format',
         'isort',
         'black',
+        'flake8',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -665,6 +666,8 @@ require('lazy').setup({
         python = { 'isort', 'black' },
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         typescript = { 'prettierd', 'prettier', stop_after_first = true },
+        javascriptreact = { 'prettierd' },
+        typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
         css = { 'prettier' },
         html = { 'prettier' },
         java = { 'google-java-format' },
